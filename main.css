@@ -75,7 +75,7 @@ section {
 }
 
 .FpsGallary {
-  margin-bottom: 400px;
+  margin-bottom: 250px;
   text-align: center;
 }
 
@@ -120,6 +120,7 @@ section {
 }
 
 .SnakeGallary {
+  margin-top: 6em;
   text-align: center;
 }
 
@@ -159,8 +160,15 @@ section {
   height: 200px;
 }
 
+.S-left-col {
+  position: relative;
+  margin-top: 2em;
+  margin-left: -22em;
+  margin-right: 22em;
+}
+
 .PacmanGallary {
-  margin-bottom: 400px;
+  margin-bottom: 25em;
   text-align: center;
 }
 
@@ -181,7 +189,7 @@ section {
 
 .Pacmanvid {
   position: relative;
-  margin-top: -66em;
+  margin-top: -69em;
   margin-left: -22em;
   margin-right: 22em;
   padding-top: 75%;
@@ -197,11 +205,11 @@ section {
   height: 200px;
 }
 
-.S-left-col {
+.right-col {
   position: relative;
-  margin-top: 2em;
-  margin-left: -22em;
-  margin-right: 22em;
+  margin-top: 20em;
+  margin-left: 22em;
+  margin-right: -22em;
 }
 
 .contact-section {
@@ -470,8 +478,8 @@ nav li a:hover {
 /*# mobile layout of Pacman */
 @media only screen and (min-width: 800px) {
   .PacmanGallary {
-    margin-top: 0em;
-    margin-bottom: 350px;
+    margin-top: -6em;
+    margin-bottom: 450px;
     text-align: left;
   }
   .PacmanGallary h1 {
