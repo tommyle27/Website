@@ -56,24 +56,27 @@ section {
   color: #2e2e2e;
   position: relative;
   top: 55px;
+  margin-right: 10em;
 }
 
 .left-col .subhead {
   color: black;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   line-height: 1.5em;
   text-align: center;
-  margin-left: -4em;
-  margin-right: -4em;
+  margin-left: -5em;
+  margin-right: -5em;
 }
 
 .hero-img {
   width: 70%;
   margin-top: 2em;
+  margin-right: -20em;
 }
 
 .FpsGallary {
-  margin-bottom: 400                           px;
+  margin-bottom: 400px;
+  text-align: center;
 }
 
 .FpsGallary h1 {
@@ -91,23 +94,39 @@ section {
   line-height: 1.5em;
 }
 
-.right-col {
-  position: relative;
-  display: table;
-  float: right;
-  margin-top: 2em;
-}
-
 .FPSvid {
   position: relative;
-  display: table;
-  float: right;
-  margin-top: -25em;
+  margin-top: -66em;
+  margin-left: -22em;
+  margin-right: 22em;
+  padding-top: 75%;
+}
+
+.FPSvid .responsive-iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.right-col {
+  position: relative;
+  margin-top: 20em;
+  margin-left: 22em;
+  margin-right: -22em;
+}
+
+.SnakeGallary {
+  text-align: center;
 }
 
 .SnakeGallary h1 {
   text-align: center;
   color: #2e2e2e;
+  margin-left: 0em;
 }
 
 .SnakeGallary h3 {
@@ -119,15 +138,70 @@ section {
   line-height: 1.5em;
 }
 
-.SnakeGallary .Simg {
+.SnakeGallary .SnakeVid {
   text-align: center;
+}
+
+.SnakeVid {
+  position: relative;
+  margin-top: 6em;
+  margin-left: 22em;
+  margin-right: -22em;
+}
+
+.SnakeVid .responsive-iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.PacmanGallary {
+  margin-bottom: 400px;
+  text-align: center;
+}
+
+.PacmanGallary h1 {
+  text-align: center;
+  color: #2e2e2e;
+  margin-left: 0em;
+}
+
+.PacmanGallary h3 {
+  color: #3a3a3a;
+}
+
+.PacmanGallary p {
+  letter-spacing: 1.5px;
+  line-height: 1.5em;
+}
+
+.Pacmanvid {
+  position: relative;
+  margin-top: -66em;
+  margin-left: -22em;
+  margin-right: 22em;
+  padding-top: 75%;
+}
+
+.Pacmanvid .responsive-iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 200px;
 }
 
 .S-left-col {
   position: relative;
-  display: table;
-  float: right;
-  margin-top: -23em;
+  margin-top: 2em;
+  margin-left: -22em;
+  margin-right: 22em;
 }
 
 .contact-section {
@@ -160,8 +234,8 @@ section {
   color: #2e2e2e;
   padding: 0em;
   margin-bottom: .5em;
-  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  -ms-grid-columns: minmax(19rem, 1fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
 input, textarea {
@@ -171,7 +245,7 @@ input, textarea {
   border-radius: .3em;
   border: 1px solid gray;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 input[type="submit"] {
@@ -226,6 +300,7 @@ nav li a:hover {
   cursor: pointer;
 }
 
+/*# mobile layout of container */
 @media only screen and (min-width: 768px) {
   .mobile-menu, .mobile-menu-exit {
     display: none;
@@ -234,18 +309,18 @@ nav li a:hover {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 180px auto;
-        grid-template-columns: 180px auto;
+    grid-template-columns: 180px auto;
     -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
   }
   .bar nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     background: none;
     position: unset;
     height: auto;
@@ -270,6 +345,7 @@ nav li a:hover {
   }
 }
 
+/*# mobile layout of hero */
 @media only screen and (min-width: 660px) {
   .container {
     width: 660px;
@@ -280,6 +356,160 @@ nav li a:hover {
     display: -ms-flexbox;
     display: flex;
     text-align: center;
+  }
+  .left-col {
+    color: #2e2e2e;
+    position: relative;
+    top: 55px;
+    margin-right: 0em;
+  }
+  .left-col .subhead {
+    color: black;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+    text-align: center;
+    margin-left: -4em;
+    margin-right: -4em;
+  }
+  .hero-img {
+    width: 70%;
+    margin-top: 2em;
+    margin-right: -2em;
+    margin-left: 2ex;
+  }
+}
+
+/*# mobile layout of FPS-Demo */
+@media only screen and (min-width: 800px) {
+  .FpsGallary {
+    margin-top: 0em;
+    margin-bottom: 350px;
+    text-align: left;
+  }
+  .FpsGallary h1 {
+    text-align: center;
+    color: #2e2e2e;
+    margin-left: 0em;
+  }
+  .FpsGallary h3 {
+    color: #3a3a3a;
+  }
+  .FpsGallary p {
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+  }
+  .right-col {
+    position: relative;
+    display: table;
+    float: right;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .FPSvid {
+    position: relative;
+    display: table;
+    float: right;
+    margin-top: -56em;
+    margin-left: 0em;
+    margin-right: 2em;
+  }
+  .FPSvid .responsive-iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 350px;
+  }
+}
+
+/*# mobile layout of Snake-Demo */
+@media only screen and (min-width: 800px) {
+  .SnakeGallary {
+    text-align: left;
+  }
+  .SnakeGallary h1 {
+    text-align: center;
+    color: #2e2e2e;
+  }
+  .SnakeGallary h3 {
+    color: #3a3a3a;
+  }
+  .SnakeGallary p {
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+  }
+  .SnakeVid {
+    position: relative;
+    display: table;
+    margin-top: -2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: -2em;
+  }
+  .SnakeVid .responsive-iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 350px;
+  }
+  .S-left-col {
+    position: relative;
+    display: table;
+    margin-top: -24em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+/*# mobile layout of Pacman */
+@media only screen and (min-width: 800px) {
+  .PacmanGallary {
+    margin-top: 0em;
+    margin-bottom: 350px;
+    text-align: left;
+  }
+  .PacmanGallary h1 {
+    text-align: center;
+    color: #2e2e2e;
+    margin-left: 0em;
+  }
+  .PacmanGallary h3 {
+    color: #3a3a3a;
+  }
+  .PacmanGallary p {
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+  }
+  .right-col {
+    position: relative;
+    display: table;
+    float: right;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .Pacmanvid {
+    position: relative;
+    display: table;
+    float: right;
+    margin-top: -56em;
+    margin-left: 0em;
+    margin-right: 2em;
+  }
+  .Pacmanvid .responsive-iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 350px;
   }
 }
 /*# sourceMappingURL=main.css.map */
